@@ -1,0 +1,8 @@
+<%= @student.first_name %> <%= @student.last_name %>
+</br>
+<% @student.achievements.each do |achieve| %>
+  <%= achieve.description %>
+  </br>
+  <%= achieve.awarded_on %>
+  </br>
+<% end %>
